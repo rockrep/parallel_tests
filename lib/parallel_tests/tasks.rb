@@ -4,7 +4,7 @@ module ParallelTests
   module Tasks
     class << self
       def rails_env
-        ENV['RAILS_ENV'] || 'test'
+        'test'
       end
 
       def run_in_parallel(cmd, options={})
